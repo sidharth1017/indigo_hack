@@ -11,7 +11,6 @@ A platfrom where you can track realtime filght status.
 ![](https://img.shields.io/badge/ExpressJS-logo?style=for-the-badge&logo=express&logoColor=white&color=grey)
 ![](https://img.shields.io/badge/MongoDB-logo?style=for-the-badge&logo=mongodb&logoColor=white)
 ![](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
-![](https://img.shields.io/badge/WebRTC-logo?style=for-the-badge&logo=webrtc&color=red)
 
 # Setup Project
 
