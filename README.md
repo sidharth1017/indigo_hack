@@ -20,7 +20,7 @@ A platfrom where you can track realtime filght status.
   
   ```
   
-  git clone https://github.com/sidharth1017/InternetRadio.git
+  git clone https://github.com/sidharth1017/indigo_hack.git
   
   ```
 
