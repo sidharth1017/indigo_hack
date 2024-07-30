@@ -1,0 +1,46 @@
+.container-home {
+    width: auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 100px;
+}
+
+.flightStatus {
+    margin-top: 50px;
+    display: flex;  
+    flex-direction: column;
+}
+
+.flightDetail,
+.flightDetailExtra {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.flightDetail input,
+.flightDetailExtra input {
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchFlight {
+    margin-top: 20px;
+    width: 150px;
+    padding: 15px 10px;
+    border: none;
+    background-color: #004098;
+    color: white;
+    font-weight: 700;
+}   
