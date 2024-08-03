@@ -1,5 +1,5 @@
 const express = require('express');
-const config = require("./config/index.js")
+const config = require("./config/index.js");
 const app = express();
 const PORT = config.port;
 const DbConnect = require("./mongoose");
