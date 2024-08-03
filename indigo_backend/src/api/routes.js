@@ -6,6 +6,7 @@ const AuthService = require("../services/authService");
 // Route flight Detail
 router.post('/flight-status', FlightStatusService.getFlightStatus);
 router.post('/add-flight', FlightStatusService.addFlight);
+router.post('/get-flight-names', FlightStatusService.getFlightNames);
 
 // Route Users 
 router.post('/login', AuthService.userLogin);

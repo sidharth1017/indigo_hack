@@ -1,0 +1,13 @@
+.searchConatiner {
+    width: auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+} 
+.searchBox {
+    margin-top: 50px;
+    padding: 10px 10px;
+}

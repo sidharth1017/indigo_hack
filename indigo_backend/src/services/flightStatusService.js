@@ -74,6 +74,34 @@ class FlightStatusService {
     }
   }
 
+  async getFlightNames(req, res) {
+    try {
+      const { flightId } = req.body;
+  
+      if (!flightId) {
+        return res.status(400).json({ message: "Flight ID is required" });
+      }
+  
+      const pattern = new RegExp(flightId, 'i'); 
+  
+      const flights = await flightSchema.find({
+        flight_id: { $regex: pattern }
+      }).select('flight_id -_id');
+  
+      if (flights.length === 0) {
+        return res.status(404).json({ message: "No flights found" });
+      }
+  
+      const flightIds = flights.map(flight => flight.flight_id);
+  
+      return res.status(200).json(flightIds);
+    } catch (err) {
+      console.log(err);
+      return res.status(500).json({ message: "Something went wrong!!" });
+    }
+  }
+  
+
 }
 
 module.exports = new FlightStatusService();

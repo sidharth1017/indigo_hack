@@ -40,3 +40,13 @@ export const verifyOtp = async (hash, otp, phone, email) => {
       throw error;
     }
   };
+
+  export const searchTermApi = async (searchTerm) => {
+    try {
+      const response = await axios.post(`${API_URL}/get-flight-names`, {flightId: searchTerm});
+      return response.data;
+    } catch (error) {
+      console.error("Error login user:", error);
+      throw error;
+    }
+  };
