@@ -25,15 +25,10 @@ export const verifyOtp = async (hash, otp, phone, email) => {
 
   export const getFlightStatus = async (flightDetails) => {
     const { departing, arrival, flightDate, flightId, pnr } = flightDetails;
+    console.log(flightDetails, "testttttt")
   
     try {
-      const response = await axios.post(`${API_URL}/flight-status`, {
-        departing,
-        arrival,
-        flightDate,
-        flightId,
-        pnr,
-      });
+      const response = await axios.post(`${API_URL}/flight-status`, {flightId: flightDetails});
       return response.data;
     } catch (error) {
       console.error("Error fetching flight status:", error);

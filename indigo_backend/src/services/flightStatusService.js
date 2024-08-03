@@ -5,9 +5,9 @@ class FlightStatusService {
     try {
       const { departing, arrival, flightDate, flightId, pnr } = req.body;
 
-      if ((!departing && !arrival && !flightDate) || !flightId) {
-        return res.status(400).json({ message: "Enter any one of the flight details" });
-      }
+      // if ((!departing && !arrival && !flightDate) || !flightId) {
+      //   return res.status(400).json({ message: "Enter any one of the flight details" });
+      // }
 
       let query = {};
 

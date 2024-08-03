@@ -70,6 +70,8 @@ const FlightTracker = () => {
             </ul>
           )}
       </div>
+      <div className="FlightDetails">
+      </div>
     </div>
   );
 };
